@@ -10,6 +10,7 @@ export class Renderer{
     draw(){
         
         this.ctx.clearRect(0,0,this.canvas.width , this.canvas.height)
+        this.scene.update()
         this.scene.draw(this.ctx)
         requestAnimationFrame( () => {this.draw()})
     }
