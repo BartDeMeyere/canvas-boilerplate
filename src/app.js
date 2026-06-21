@@ -1,5 +1,6 @@
+import { Game } from "./game/game.js"
 import { Renderer } from "./renderer.js"
-import { Scene } from "./scene/scene.js"
+
 
 export class App {
 
@@ -17,9 +18,9 @@ export class App {
 
         this.ctx.scale(this.dpr , this.dpr)
 
-        this.scene = new Scene(this.canvas)
+        this.game = new Game(this.canvas)
 
-        this.renderer = new Renderer(this.canvas, this.scene)
+        this.renderer = new Renderer(this.canvas, this.game)
         this.renderer.draw()
     }
 }
