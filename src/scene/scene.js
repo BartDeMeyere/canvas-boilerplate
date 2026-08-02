@@ -21,6 +21,7 @@ export class Scene {
 
         if (this.event.pointer.isPressed) {
 
+            this.event.pointer.isPressed = false
             console.log(this.event.pointer.x , this.event.pointer.y)
         }
 
