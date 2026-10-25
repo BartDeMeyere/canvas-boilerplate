@@ -17,7 +17,7 @@ export class Scene {
 
     }
 
-    runLoop() {
+    update() {
 
         if (this.event.pointer.isPressed) {
 
