@@ -13,7 +13,7 @@ export class Renderer {
 
         if (this.scene) {
 
-            this.scene.runLoop()
+            this.scene.update()
             this.scene.draw(this.ctx)
         }
         
