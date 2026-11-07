@@ -7,7 +7,8 @@ export class EventHandler {
             x: 0,
             y: 0,
             isPressed: false,
-            isReleased: false
+            isReleased: false,
+            hasTarget: false
         }
         this.init()
     }
